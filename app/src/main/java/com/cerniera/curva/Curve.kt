@@ -14,7 +14,7 @@ data class Shape(val points: List<Pair<Float, Float>>, val exact: Boolean, val e
 
 object Curve {
     /** How long a goal takes to bend the line, in match minutes. */
-    private const val BEND = 2.5f
+    private const val BEND = 4f
 
     fun of(goals: List<Goal>?, ht: Pair<Int, Int>?, ft: Pair<Int, Int>?, length: Int = 90): Shape {
         val scoring = goals?.filter { !it.red }
